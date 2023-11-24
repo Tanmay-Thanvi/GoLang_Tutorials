@@ -52,10 +52,10 @@ lco:
 	// infinite loop in golang (Asked in Pubmatic)
 	cnt := 0
 	for {
-		// if i > 50 {
-		// 	break;
-		// }
 		cnt += 5
+		if cnt > 50 {
+			break;
+		}
 		fmt.Println("i = ", cnt)
 		time.Sleep(5)
 	}
